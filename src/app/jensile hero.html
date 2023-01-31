@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=sc, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Heading</h1>
+    <table>
+        <th>
+            <td>column</td>
+            <td>column</td>
+        </th>
+        <tr><td>1</td><td>2</td></tr>
+    </table>
+    <script>
+        //let a =5; { let a= 10;};
+       // console.log("a="+a) //5
+      //-----------------------------
+      //console.log(a);
+       // let a = 10 //Uncaught Error
+       //-----------------------------
+       //var a = 5; { var 
+       //a = 10;};
+       // console.log(a) // 10
+       //----------------------------
+       //console.log(a);
+       //var a = 10; // Undefined
+       var a = {},
+           b= {key:'b'},
+           c= { key:'c'};
+           a[b]=100;
+           a[c]=200;
+           console.log(a[b]+a[c])
+    const points =[ 5,56,7,4];
+    points[1]=6;
+    console.log(points);
+
+    </script>
+   
+</body>
+</html>

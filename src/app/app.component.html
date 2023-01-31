@@ -1,0 +1,117 @@
+<!--  <h1>Heading</h1>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let movie of movies; let j = index;">
+                <td>{{j+1}}</td>
+                <td>{{movie.fname}}</td>
+                <td>{{movie.lname}}</td>
+                <td>{{movie.eMail}}</td>
+            </tr>
+        </tbody>
+    </table>
+    </div> -->
+
+    <div>
+        <p *ngIf="result; else not; then then">My result</p>
+        <ng-template #not>
+            No result
+        </ng-template>
+        <ng-template #then>
+            New result
+        </ng-template>
+    </div>
+    <div>
+      Value   <input type="checkbox"  [(ngModel)]="result">
+        <p *ngIf="result">Checked</p>
+        <p *ngIf="!result">Value no checked</p>
+        
+    </div>
+    <div>
+        <h1>Pipe</h1>
+        <p>{{myNumber}}</p>
+        <p>{{myNumber | date}}</p>
+        <p>{{myNumber|date:'dd-MM-YYYY'}}</p>
+    </div>
+    <div>
+        <p>{{myName}}</p>
+        <p>{{myName|uppercase}}</p>
+        <p>{{myName|lowercase}}</p>
+    </div>
+    <div>
+        <h1 [ngClass]="{'largeFont':isLargeFont,'colorBlue':isColorBlue}">World one</h1>
+        <h2 [ngClass]="{'lowFont':true,'colorRed':true}">World Two</h2>
+    </div>
+    <div>
+        <p>{{myPoint}}</p>
+        <p>{{myPoint|percent}}</p>
+        <p>{{myPoint|number:'8.1-12'}}</p>
+        <h1>currency</h1>
+        <p>{{myCurrency}}</p>
+        <p>{{myCurrency|currency:'INR'}}</p>
+        <p>{{myCurrency}}</p>
+
+    </div>
+    <input type="text" [(ngModel)]="allNumber" maxlength="26">
+    <div [ngSwitch]="allNumber">
+        <h1 *ngSwitchCase="'one'">One</h1>
+        <h1 *ngSwitchCase="'two'">Two</h1>
+        <h1 *ngSwitchCase="'three'">Three</h1>
+        <h1 *ngSwitchCase="'four'">Four</h1>
+        <h1 *ngSwitchCase="'five'">Five</h1>
+        <h1 *ngSwitchDefault>Not Valide</h1>
+    </div>   
+   <!-- <div>
+        <table>
+            <tr>
+                <th>Reg.</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>E-mail</th>
+            </tr>
+            <tr *ngFor="let movie of movies; let i=index;">
+                <td>{{i+1}}</td>
+                <td>{{movie.fname}}</td>
+                <td>{{movie.lname}}</td>
+                <td>{{movie.eMail}}</td>
+
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <div>
+        <h1>Custom Pipe</h1>
+        <p>{{rollNumber|newPipe}}</p>
+    </div>
+    <hr> -->
+    <br><br>
+    <h1>app-component1</h1>
+<app-component1 ></app-component1>
+<app-com1></app-com1>
+
+
+
+
+
+
+    <!--
+    <div>
+        <h1>Angular Forms</h1>
+        <input type="text" name="email" [formControl]="email">
+        <p class="red" *ngIf="email.errors?.minlength">Minimum 2 characters should be there</p>
+        <p class="red" *ngIf="email.errors?.maxlength">Max 10 characters</p>
+        <p class="red" *ngIf="email.errors?.required">Email is required</p>
+
+        <button (click)="showEmailDetails()">Click me</button>
+    </div> -->
+    <!--<p>unformatted:{{per}}</p>
+    <p>Example 1:{{per|percent:'3.2-7'}}</p> -->

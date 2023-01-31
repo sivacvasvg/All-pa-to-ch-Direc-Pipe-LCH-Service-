@@ -1,0 +1,18 @@
+.up {
+    font-weight: 10px;
+}
+.low {
+    font-weight:35px ;
+}
+.blue {
+    color: blue;
+} 
+.red{
+    color: red;
+    margin: 0;
+}
+table,tr,td,th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px 15px;
+}
